@@ -1,0 +1,112 @@
+.header__container {
+  width: 100%;
+  background-color: #010168;
+  height: 100vh;
+}
+
+.header__container::after {
+  content: "";
+  width: 100%;
+  background-color: #dde3eb;
+  position: absolute;
+  bottom: 0;
+  height: 275px;
+  background: url(../public/wave-bottom.svg);
+}
+
+.constraint {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.navbar__container {
+  width: 100%;
+  background-color: transparent;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  color: white;
+  background-color: #3434c5;
+  padding: 0.5em;
+  border-radius: 33% 67% 65% 35% / 19% 52% 48% 81%;
+  cursor: pointer;
+}
+
+.logo__text {
+  font-size: 1.5rem;
+}
+
+.menu {
+  width: auto;
+  color: white;
+}
+
+li {
+  display: inline;
+  margin-left: 1em;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  font-weight: 500;
+}
+
+li:hover {
+  color: #3434c5;
+}
+
+.mobile__icon {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .mobile {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #151549;
+    width: 50vw;
+    height: 100vh;
+    transition: all 0.7s ease-in;
+    padding: 2em 1em;
+    z-index: 99999;
+  }
+
+  .pc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.7s ease-in;
+    background-color: #151549;
+    width: 50vw;
+    height: 100vh;
+    padding: 2em 1em;
+    z-index: 99999;
+  }
+
+  li {
+    display: block;
+    text-align: start;
+    padding: 1em 0;
+    font-weight: 500;
+  }
+
+  .constraint {
+    max-width: 90%;
+  }
+
+  .mobile__icon {
+    display: block;
+  }
+}

@@ -1,0 +1,15 @@
+.transparent {
+  background-color: transparent;
+  padding: 0;
+}
+
+.portfolio {
+  height: 60%;
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 2em;
+}
+
+.service__columns {
+  width: 100%;
+}
