@@ -1,4 +1,5 @@
 import React from "react";
+import Service from "../data/service";
 
 const Services = () => {
   return (
@@ -14,15 +15,30 @@ const Services = () => {
               </p>
             </div>
             <div className="service__content">
-              <div className="service__tag">
-                <div className="service__color"></div>
-                <h4>Web Development</h4>
-                <p className="service__tagline__title">
-                  Favourite tolerably engrossed. Truth short folly court why she
-                  their balls Excellence super power.
-                </p>
-              </div>
-              <div className="service__tag">
+              {Service.map((services) => {
+                return (
+                  <>
+                    <div key={services.id} className="service__tag ">
+                      <div className="service__color {services.color} "></div>
+                      <h4>{services.title}</h4>
+                      <p className="service__tagline__title">{services.desc}</p>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="whitespace" />
+    </>
+  );
+};
+
+export default Services;
+
+{
+  /* <div className="service__tag">
                 <div className="service__color green"></div>
                 <h4>Content Writing </h4>
                 <p className="service__tagline__title">
@@ -37,15 +53,5 @@ const Services = () => {
                   Favourite tolerably engrossed. Truth short folly court why she
                   their balls Excellence super power.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-    </>
-  );
-};
-
-export default Services;
+              </div> */
+}

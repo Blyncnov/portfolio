@@ -14,4 +14,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #dde3eb;
+  color: #eed8c4;
+}
+
+h4 {
+  color: #2f2e41;
+}
+
+.whitespace {
+  margin: 3em 0;
 }

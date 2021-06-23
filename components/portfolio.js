@@ -1,4 +1,5 @@
 import React from "react";
+import Work from "../data/works";
 
 const Portfolio = () => {
   return (
@@ -14,36 +15,24 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="service__content ">
-              <div className="service__tag full">
-                <div className="service__color portfolio"></div>
-                <h4>Web Development</h4>
-                <br />
-                <h6>
-                  <a href="">view more...</a>
-                </h6>
-              </div>
-              <div className="service__tag full">
-                <div className="service__color green portfolio"></div>
-                <h4>Content Writing </h4>
-                <br />
-                <h6>
-                  <a href="">view more...</a>
-                </h6>
-              </div>
-              <div className="service__tag full">
-                <div className="service__color purple portfolio"></div>
-                <h4>UI / UX Design</h4>
-                <br />
-                <h6>
-                  <a href="">view more...</a>
-                </h6>
-              </div>
+              {Work.map((works) => {
+                return (
+                  <>
+                    <div className="service__tag full shadow">
+                      <div className="service__color portfolio"></div>
+                      <h4 className="service__h4">{works.title}</h4>
+                      <h6>
+                        <a href={works.link}>See Demo ...</a>
+                      </h6>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
+      <div className="whitespace" />
     </>
   );
 };

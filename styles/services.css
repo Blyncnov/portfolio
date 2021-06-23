@@ -30,6 +30,10 @@
   line-height: 40px;
 }
 
+.service__h4 {
+  margin-bottom: 0.5em;
+}
+
 .service__tag {
   background-color: white;
   height: calc(20em - 40px);

@@ -25,7 +25,7 @@
 
 .banner__image {
   padding: 3em;
-  background-color: #3434c5;
+  /* background-color: #3434c5; */
   clip-path: circle();
   z-index: 99;
 }

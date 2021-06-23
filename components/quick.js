@@ -17,8 +17,7 @@ const Quick = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
+      <div className="whitespace" />
     </>
   );
 };

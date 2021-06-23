@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../components/header";
 import Services from "../components/services";
 import Portfolio from "../components/portfolio";
-// import Tech from "../components/tech";
+import Tech from "../components/tech";
 import Quick from "../components/quick";
 import Footer from "../components/footer";
 
@@ -14,7 +14,7 @@ const Home = () => {
       <Services />
       <Portfolio />
       <Quick />
-      {/* <Tech /> */}
+      <Tech />
       <Footer />
     </>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Technologies from "../data/techs";
 
 const Tech = () => {
   return (
@@ -17,15 +18,27 @@ const Tech = () => {
               <div className="tech__inner ">
                 <div className="inner__show"></div>
               </div>
-              <div className="tech__inner">
-                <div className="inner__show green"></div>
+              <div className="tech__inner shadow">
+                <div className="inner__show transparent scroll">
+                  {Technologies.map((tech) => {
+                    return (
+                      <>
+                        <div className="tech__percentage">
+                          <div className="basis">
+                            <h4>{tech.tech} </h4>
+                          </div>
+                          <div className="tech__fill"></div>
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
+      <div className="whitespace" />
     </>
   );
 };
