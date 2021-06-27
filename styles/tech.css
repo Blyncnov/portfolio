@@ -21,6 +21,10 @@
   border-radius: 10px;
 }
 
+.inner__show:hover {
+  transform: scale(102%);
+}
+
 .transparent {
   background-color: transparent;
 }

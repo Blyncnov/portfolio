@@ -43,6 +43,10 @@
   border-radius: 10px;
 }
 
+.service__tag:hover {
+  transform: scale(110%);
+}
+
 .service__tagline {
   color: black;
   font-weight: 500;

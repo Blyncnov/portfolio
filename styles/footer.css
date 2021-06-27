@@ -1,10 +1,11 @@
 .footer {
   width: 100%;
-  height: 10vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #010168;
+  border-radius: 20% 40% 0% 0%;
 }
 
 .footer__name {

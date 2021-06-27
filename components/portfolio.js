@@ -18,12 +18,14 @@ const Portfolio = () => {
               {Work.map((works) => {
                 return (
                   <>
-                    <div className="service__tag full shadow">
-                      <div className="service__color portfolio"></div>
-                      <h4 className="service__h4">{works.title}</h4>
-                      <h6>
-                        <a href={works.link}>See Demo ...</a>
-                      </h6>
+                    <div key={works.id}>
+                      <div className="service__tag full shadow">
+                        <div className="service__color portfolio"></div>
+                        <h4 className="service__h4">{works.title}</h4>
+                        <h6>
+                          <a href={works.link}>See Demo ...</a>
+                        </h6>
+                      </div>
                     </div>
                   </>
                 );

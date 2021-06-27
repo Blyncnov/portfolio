@@ -22,14 +22,14 @@ const Tech = () => {
                 <div className="inner__show transparent scroll">
                   {Technologies.map((tech) => {
                     return (
-                      <>
+                      <div key={tech.id}>
                         <div className="tech__percentage">
                           <div className="basis">
                             <h4>{tech.tech} </h4>
                           </div>
                           <div className="tech__fill"></div>
                         </div>
-                      </>
+                      </div>
                     );
                   })}
                 </div>

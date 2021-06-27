@@ -17,13 +17,13 @@ const Services = () => {
             <div className="service__content">
               {Service.map((services) => {
                 return (
-                  <>
-                    <div key={services.id} className="service__tag ">
+                  <div key={services.id}>
+                    <div className="service__tag ">
                       <div className="service__color {services.color} "></div>
                       <h4>{services.title}</h4>
                       <p className="service__tagline__title">{services.desc}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
             </div>

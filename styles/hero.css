@@ -58,6 +58,19 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.5s ease-in;
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+button:hover {
+  clip-path: inset(0% 5% 0% 5%);
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+#slide {
+  animation: slide 0.7s ease-in;
 }
 
 @media (max-width: 760px) {

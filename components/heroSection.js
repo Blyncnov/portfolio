@@ -18,7 +18,12 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="hero__row banner__image">
-            <Image className="banner__img" src={profilePic} alt="jeremy" />
+            <Image
+              id="slide"
+              className="banner__img"
+              src={profilePic}
+              alt="jeremy"
+            />
           </div>
         </div>
       </div>
