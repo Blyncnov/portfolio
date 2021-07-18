@@ -24,23 +24,26 @@ const Navbar = () => {
               <h1 className="logo__text">Blyncnov</h1>
             </div>
             <div className="menu">
-              <ul className={click ? "pc" : "mobile"}>
-                <li>
+              <ul
+                onClick={mobileClickHandler}
+                className={click ? "pc" : "mobile"}
+              >
+                <li onClick={mobileClickHandler}>
                   <Link href="#home">
                     <a style={{ color: "white" }}>Home</a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={mobileClickHandler}>
                   <Link href="#work">
                     <a style={{ color: "white" }}>Work</a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={mobileClickHandler}>
                   <Link href="#portfolio">
                     <a style={{ color: "white" }}>Portfolio</a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={mobileClickHandler}>
                   <Link href="/template">
                     <a style={{ color: "white" }}>Template</a>
                   </Link>

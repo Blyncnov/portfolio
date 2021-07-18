@@ -10,8 +10,7 @@ const Services = () => {
             <div className="service__text">
               <h3 className="service__title">Take a look some of what I do.</h3>
               <p className="service__tagline">
-                Our teams continually develop different types of web
-                applications and products.
+                I design , Code & provide great user experience.
               </p>
             </div>
             <div className="service__content">

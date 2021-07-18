@@ -17,7 +17,7 @@ const HeroSection = () => {
               <button>{Infomation.button}</button>
             </div>
           </div>
-          <div className="hero__row banner__image">
+          <div className="hero__row banner__image hide_image">
             <Image
               id="slide"
               className="banner__img"

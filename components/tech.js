@@ -16,7 +16,12 @@ const Tech = () => {
             </div>
             <div className="tech__container ">
               <div className="tech__inner ">
-                <div className="inner__show"></div>
+                <div className="inner__show">
+                  <img
+                    src="https://blyncnov.netlify.app/static/media/office.500d47ad.svg"
+                    alt="tech"
+                  />
+                </div>
               </div>
               <div className="tech__inner shadow">
                 <div className="inner__show transparent scroll">

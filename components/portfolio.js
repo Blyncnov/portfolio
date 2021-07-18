@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import Work from "../data/works";
 
-const Portfolio = () => {
+const Portfolio = ({ img }) => {
   return (
     <>
       <div className="constraint">
@@ -20,10 +21,12 @@ const Portfolio = () => {
                   <>
                     <div key={works.id}>
                       <div className="service__tag full shadow">
-                        <div className="service__color portfolio"></div>
+                        <div className="service__color portfolio">
+                          <img src={works.img} alt="Picture of the author" />
+                        </div>
                         <h4 className="service__h4">{works.title}</h4>
                         <h6>
-                          <a href={works.link}>See Demo ...</a>
+                          <a href={works.link}>Preview Link</a>
                         </h6>
                       </div>
                     </div>

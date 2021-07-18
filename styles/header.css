@@ -72,6 +72,14 @@ li:hover {
 }
 
 @media (max-width: 760px) {
+  .header__container::after {
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    background: none;
+  }
+
   .mobile {
     position: absolute;
     top: 0;

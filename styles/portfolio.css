@@ -13,3 +13,7 @@
 .service__columns {
   width: 100%;
 }
+
+img {
+  max-width: 100%;
+}
